@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ADD DETAILS</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="/static/design.css">
+</head>
+
+<body>
+    <h1>WELCOME TO ADD DETAILS </h1>
+
+
+    <!-- <fieldset> -->
+    <div align="center">
+        <!-- <div  style="display: inline-block; height: 50rem; width: 28rem; background-color: antiquewhite;"> -->
+        <form action="/insert" method="post">
+            <tr>
+                <!-- <td> <label align="center">ID:</label></td> -->
+                <input type="number" name="id" placeholder="ID"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required>
+            </tr> <br>
+            <tr>
+                <!-- <td>    <label>PROBLEM:</label></td> -->
+                <input type="text" name="problem" placeholder="PROBLEM"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem;  margin-bottom: 1rem;" required><br><br>
+
+            </tr>
+            <tr>
+                <!--  <td>
+                             <label align="center">CATEGORY:</label> -->
+
+                <input type="text" name="category" placeholder="CATEGORY"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required><br><br>
+
+            </tr>
+            <tr>
+                <!-- <td>
+                            <label align="center">DETAILS:</label>
+                        </td> -->
+                <input type="text" name="details" placeholder="DETAILS"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required><br>
+
+            </tr>
+            <!-- <td>
+                            <label align="center">PICTURE:</label>
+                        </td> -->
+
+            <input type="text" name="img" placeholder="IMAGE"
+                style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                required> <br>
+
+            <tr>
+                <!-- <td>
+                            <label align="center">VIDEO:</label>
+                        </td> -->
+                <input type="text" name="link" accept="url_for/*" placeholder="YOUTUBE LINK"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <!-- </table> -->
+            <center>
+                <input type="submit" value="submit"
+                    style="border: none; width: 8rem; border-radius: 0.2rem;  height: 2rem; margin-top: 1rem; color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">
+
+                <input type="reset" value="reset"
+                    style="border: none; width: 8rem; border-radius: 0.2rem;  height: 2rem; margin-top: 1rem; color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">
+            </center>
+   
+        </form>
+        <center>
+            <h2><a href="/logout" ><button style="border:0.2rem;width: 14.5rem; border-radius: 0.2rem;  height: 2rem; margin-top: 1rem;color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">LOGOUT</button></a></h2>
+
+        </center>
+    </div>
+    <!-- </fieldset>  -->
+
+    <!-- <center>
+        <div>
+            <form action="" method="get">
+                <form action="/insert" method="post">
+                    <span>ID:</span><br>
+                <input type="text" name="username"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    placeholder="ID" required><br>
+                <input type="password" name="password"
+                    style="width: 14rem; height: 1.7rem; border-radius: 0.2rem; margin-bottom: 1rem"
+                    placeholder="Password" required><br>
+                <input type="submit" value="Login"
+                    style="border: none; width: 14.5rem; border-radius: 0.2rem;  height: 2rem; margin-top: 1rem; color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">
+
+            </form>
+        </div>
+    </center>    -->
+
+</body>
+
+</html>
