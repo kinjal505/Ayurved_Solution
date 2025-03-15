@@ -1,0 +1,22 @@
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../static/jadibuti.webp); 
+    font-size: larger;
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-blend-mode:lighten;
+    color:rgba(20, 20, 20, 0.827);
+    font-weight: bolder;
+  
+         
+}
+ h1{
+  
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+      }
+
+      form{
+        text-align:"center";
+      }
