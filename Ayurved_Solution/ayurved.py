@@ -7,7 +7,7 @@ from flask import *
 from sql import *
 
 app=Flask(__name__)
-app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "pushpa_lamboo")
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "pushpa,lamboo")
 
 #home page
 @app.route("/")
