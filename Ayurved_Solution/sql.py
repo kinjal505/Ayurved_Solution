@@ -18,13 +18,13 @@ def insertrec(t):
     db.commit()
     db.close()
 #edit record
-def updaterec(t):
-    db=getconnection()
-    cr=db.cursor()
-    sql="UPDATE medicine SET category=?, problem=?, details=?, image=?, link=? WHERE id=?"
-    cr.execute(sql,t)
-    db.commit()
-    db.close()
+# def updaterec(t):
+#     db=getconnection()
+#     cr=db.cursor()
+#     sql="UPDATE medicine SET category=?, problem=?, details=?, image=?, link=? WHERE id=?"
+#     cr.execute(sql,t)
+#     db.commit()
+#     db.close()
  
  
 #display record
