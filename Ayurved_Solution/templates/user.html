@@ -59,9 +59,39 @@
             </form>
         </div>
         <h2 align="center">WELCOME TO KS AYURVED SOLUTION</h2>
-        <center>
-        <h3><a href="/logout" ><button style="border:0.2rem;width: 14.5rem; border-radius: 0.2rem;  height: 2rem; margin-top: 1rem;color: rgb(134, 121, 121);background-color: rgb(246, 241, 235)">LOGOUT</button> </a></h3>
-    </center>
+
+        <div style="position: absolute; top: 10px; right: 10px;">
+            <h3 style="margin-bottom: 5px; font-size: 16px; text-align: center;">Order Now</h3>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/ayurved_world__/" target="_blank"
+                   style="background-color: #ff4081; color: white; padding: 5px 10px; text-decoration: none;
+                          border-radius: 5px; font-size: 14px; font-weight: bold; display: flex; 
+                          align-items: center; gap: 5px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                         alt="Instagram" width="16"> Instagram
+                </a>
+        
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/7738222198?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20Ayurvedic%20solutions." target="_blank"
+                   style="background-color: #25D366; color: white; padding: 5px 10px; text-decoration: none;
+                          border-radius: 5px; font-size: 14px; font-weight: bold; display: flex; 
+                          align-items: center; gap: 5px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                         alt="WhatsApp" width="16"> WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        <div style="position: absolute; top: 10px; left: 10px;">
+            <a href="/logout">
+                <button style="border: 0.2rem; width: 10rem; border-radius: 0.2rem; height: 2rem; 
+                              color: rgb(134, 121, 121); background-color: rgb(246, 241, 235);">
+                    LOGOUT
+                </button>
+            </a>
+        </div>
+    
     </section>
 
     {% for i in elist %}

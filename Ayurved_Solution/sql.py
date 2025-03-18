@@ -17,12 +17,13 @@ def insertrec(t):
     print(t)
     db.commit()
     db.close()
+
 #edit record
 def updaterec(t):
     db=getconnection()
     cr=db.cursor()
     sql="UPDATE medicine SET category=?, problem=?, details=?, image=?, link=? WHERE id=?"
-    cr.execute(sql,t[:6])
+    cr.execute(sql,t[1:])
     db.commit()
     db.close()
  
@@ -46,15 +47,13 @@ def deleterec(id):
     cr.execute(sql,(id,))
     db.commit()
     db.close()
- 
- 
- 
+  
 #select record
 def selectr(id):
     db=getconnection()
     cr=db.cursor()
     sql="select * from medicine where id=?"
-    cr.execute(sql,id)
+    cr.execute(sql,(id,))
     data=cr.fetchall()
     print(data)
     db.commit()

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | KS Ayurved Solution</title>
+    <link rel="stylesheet" href="/static/design.css">
+    <style>
+        body {
+            background: url('/static/ayurved.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-card {
+            display: flex;
+            background: #f5e6cc;;
+            border-radius: 12px;
+            width: 60%;
+            max-width: 800px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-section {
+            padding: 25px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-section h2 {
+            margin-bottom: 8px;
+            color: #222;
+            font-size: 24px;
+        }
+
+        .info-section p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .contact-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .contact-links a {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            gap: 8px;
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-links a:hover {
+            opacity: 0.85;
+            transform: scale(1.05);
+        }
+
+        .instagram {
+            background-color: #ff4081;
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .social-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .image-section {
+            width: 50%;
+            background: url('/static/jadibuti.jpg') no-repeat center center/cover;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-card {
+                flex-direction: column;
+                width: 90%;
+            }
+            .image-section {
+                width: 100%;
+                height: 220px;
+            }
+            .info-section {
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+            .contact-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-card">
+        <div class="info-section">
+            <h2>Kinjal Shah</h2>
+            <p><strong>Ayurved World</strong></p>
+            <p>We create a variety of beauty products and Ayurvedic solutions at home, customized as per your requirements.</p>
+            <p><strong>Contact:</strong> 7738222198</p>
+
+            <div class="contact-links">
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/ayurved_world__/" target="_blank" class="instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                         alt="Instagram" class="social-icon"> Instagram
+                </a>
+            
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/7738222198?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20Ayurvedic%20solutions." target="_blank" class="whatsapp">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+        alt="WhatsApp" class="social-icon"> WhatsApp
+</a>
+
+            </div>
+        </div>
+
+        <div class="image-section"></div>
+    </div>
+
+</body>
+</html>
+

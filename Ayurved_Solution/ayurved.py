@@ -106,6 +106,10 @@ def user():
   print(U)
   return render_template("user.html", elist=U)
 
+@app.route("/contactus")
+def contact():
+    return render_template("contactus.html")
+
 #category display
 @app.route("/cate")
 def usercategory():
