@@ -51,13 +51,37 @@
 
     </select>
     <section>
-        <div style="height: 40px; width:100%; text-align: center;border: none;">
-            <form action="cate" method="get">
-                <label for="">search</label>
-                <input type="text" name="search" placeholder="type skin or hair " style="border:none ;">
-                <input type="submit" name="search" id="search">
+        <div style="width: 100%; text-align: center; border: none; padding: 10px;">
+            <form action="cate" method="get" style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+                <label for="search">Search:</label>
+        
+                <select name="search" id="search" style="
+                    border: 1px solid #ccc; 
+                    padding: 8px; 
+                    border-radius: 5px; 
+                    font-size: 16px; 
+                    background-color: white; 
+                    cursor: pointer; 
+                    width: 200px; 
+                    height: 40px;">
+                    <option value="">-- Select Category --</option>
+                    <option value="skin">Skin</option>
+                    <option value="hair">Hair</option>
+                </select>
+        
+                <input type="submit" value="Search" style="
+                    border: none; 
+                    background-color: #007bff; 
+                    color: white; 
+                    padding: 8px 16px; 
+                    border-radius: 5px; 
+                    font-size: 16px; 
+                    cursor: pointer; 
+                    height: 40px;">
             </form>
         </div>
+        
+        
         <h2 align="center">WELCOME TO KS AYURVED SOLUTION</h2>
 
         <div style="position: absolute; top: 10px; right: 10px;">

@@ -47,6 +47,8 @@ def deleterec(id):
     cr.execute(sql,(id,))
     db.commit()
     db.close()
+
+ 
   
 #select record
 def selectr(id):
